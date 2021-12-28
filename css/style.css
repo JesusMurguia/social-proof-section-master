@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&family=Spartan:wght@400;500;700&display=swap');
+*{
+
+ --very-dark-magenta: hsl(300, 43%, 22%);
+ --soft-pink: hsl(333, 80%, 67%);
+ --dark-grayish-magenta: hsl(303, 10%, 53%);
+ --light-grayish-magenta: hsl(300, 24%, 96%);
+ --white: hsl(0, 0%, 100%);
+ font-size: 12px;
+ font-family: 'Spartan', sans-serif;
+}
+
+body{
+    background-image: url("../images/bg-pattern-top-mobile.svg"), url("../images/bg-pattern-bottom-mobile.svg");
+    background-position: top left, bottom right;
+    background-repeat: no-repeat, no-repeat;
+    margin-top: 6.5rem;
+}
+
+.title{
+    font-weight: 700;
+    color: var(--very-dark-magenta);
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+}
+
+
+.subtitle{
+    text-align: center;
+    color: var(--dark-grayish-magenta);
+    font-size: 1.2rem;
+    padding: 0;
+    font-weight: 500;
+    margin-bottom: 2rem;
+}
+
+
+
+.container{
+    padding: 1.75rem;
+}
+
+.ratings{
+    margin: 1rem auto;
+    background-color: var(--light-grayish-magenta);
+    border-radius: 1rem;
+    padding: 1rem;
+    color: var(--very-dark-magenta);
+    max-width: 400px;
+    align-items: center;
+}
+
+.ratings > div{
+    font-weight: 700;
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.rating-text{
+    padding-left: 1rem;
+}
+
+.card{
+    margin: 1rem auto;
+    color: var(--white);
+    background-color: var(--very-dark-magenta);
+    margin-bottom: .5rem;
+    padding: 3rem;
+    border-radius: 1rem;
+    height: 230px;
+    max-width: 400px;
+}
+
+
+.avatar{
+    width: 4em;
+    border-radius: 50%;
+    margin-right: 1em;
+}
+
+.verified{
+    color: var(--soft-pink);
+    font-weight: 400;
+}
+.name{
+    font-weight: 500;
+}
+.card-name{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    align-content: space-between;
+    margin-bottom: 1rem;
+} 
+
+
+ @media screen and (min-width: 992px) {
+    body{
+        background-image: url("../images/bg-pattern-top-desktop.svg"), url("../images/bg-pattern-bottom-desktop.svg");
+        background-position: top left, bottom right;
+        background-repeat: no-repeat, no-repeat;
+        width: 100vw;
+        height: 100vh;
+    }
+    
+    .ratings{
+        margin: 1rem 0;
+        width: 400px;
+    }
+
+    .ratings:nth-child(2){
+        margin-left:5rem;
+    }
+    .ratings:nth-child(3){
+        margin-left:10rem;
+    }
+
+    .card-irene{
+        margin-top:1.5rem
+    }
+
+    .card-anne{
+        margin-top:3rem;
+    }
+    .title, .subtitle{
+        text-align: left;
+        padding: 1rem 15rem 0 0;
+    }
+}  
+
+
+.container{
+    margin: 0 auto;
+}
